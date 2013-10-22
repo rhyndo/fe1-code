@@ -1,5 +1,7 @@
+@import url(http://fonts.googleapis.com/css?family=Berkshire+Swash);
+
 body {
-	font: 16px/1.5 Verdana, Arial, sans-serif;
+	font: 24px/1.5 Verdana, Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -44,7 +46,7 @@ blockquote {
 	border: 1px solid #CCC;
 	border-left-width: 10px;
 	padding: 40px;
-	margin: 0 0 20px 20px;
+	margin: 0 0 20px 0;
 	font-style: italic;
 	color: #666; 
 	font-family: Georgia, serif;
@@ -58,3 +60,7 @@ blockquote:hover {
 blockquote p:last-child {
 	padding: 0; 
 }
+
+.abbr { letter-spacing: 0.1em; }
+
+.amp { font-family: "Berkshire Swash", Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", "Warnock Pro", serif; }
