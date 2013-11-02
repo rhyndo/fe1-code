@@ -1,0 +1,16 @@
+* { padding: 0; margin: 0; }
+
+body { font: 16px Verdana, sans-serif; padding: 60px; background: #EEE; }
+
+.tabs-container { }
+.tabs-container ul.tabs { overflow: hidden; position: relative; z-index: 2; bottom: -1px; }
+.tabs-container ul.tabs li { display: block; float: left; list-style: none outside; border: 1px solid #666; border-bottom-color: #CCC; margin-right: 5px;  }
+.tabs-container ul.tabs li a { display: block; padding: 5px 15px; background: #CCC; text-decoration: none;  }
+.tabs-container ul.tabs li a:hover { text-decoration: underline;  }
+.tabs-container ul.tabs li.selected { border-color: #CCC; border-bottom-color: #FFF; }
+.tabs-container ul.tabs li.selected a { background: #FFF; }
+.tabs-container ul.tabs li.selected a:hover { text-decoration: none;  }
+.tabs-container .tabs-content { background: #FFF; border: 1px solid #CCC; padding: 20px;  }
+
+
+
