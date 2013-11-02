@@ -1,16 +1,17 @@
 * { padding: 0; margin: 0; }
 
-body { font: 16px Verdana, sans-serif; padding: 60px; background: #EEE; }
+body { font: 16px/1.5 Verdana, sans-serif; padding: 60px; background: #EEE; }
 
 .tabs-container { }
 .tabs-container ul.tabs { overflow: hidden; position: relative; z-index: 2; bottom: -1px; }
-.tabs-container ul.tabs li { display: block; float: left; list-style: none outside; border: 1px solid #666; border-bottom-color: #CCC; margin-right: 5px;  }
-.tabs-container ul.tabs li a { display: block; padding: 5px 15px; background: #CCC; text-decoration: none;  }
+.tabs-container ul.tabs li { display: block; height: 31px; float: left; list-style: none outside; margin-right: 5px; background: url(../images/li_bgrd_right.png) right top no-repeat;  }
+.tabs-container ul.tabs li a { display: block; height: 100%; line-height: 31px; padding: 0 15px; text-decoration: none; color: #FFF; background: url(../images/li_bgrd_left.png) left top no-repeat;  }
 .tabs-container ul.tabs li a:hover { text-decoration: underline;  }
-.tabs-container ul.tabs li.selected { border-color: #CCC; border-bottom-color: #FFF; }
-.tabs-container ul.tabs li.selected a { background: #FFF; }
+.tabs-container ul.tabs li.selected { background: #FFF; border: 1px solid #CCC; border-bottom: none;   }
+.tabs-container ul.tabs li.selected a { background: #FFF; color: #000;   }
 .tabs-container ul.tabs li.selected a:hover { text-decoration: none;  }
-.tabs-container .tabs-content { background: #FFF; border: 1px solid #CCC; padding: 20px;  }
+
+.tabs-container .tabs-content { display: none; background: #FFF; border: 1px solid #CCC; padding: 20px;  }
 
 
 
