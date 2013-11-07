@@ -1,0 +1,15 @@
+Pages of a blog
+
+List of posts
+Archive - List of posts filtered by something
+Single Post
+
+List of Pages
+Single Page
+
+Elements
+
+- Comment list
+- Comment form
+- Catogories list
+- Tags list
