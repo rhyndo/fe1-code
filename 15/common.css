@@ -1,0 +1,31 @@
+* { padding: 0; margin: 0; }
+
+body { padding: 60px; }
+
+form { width: 60%; margin: 0 auto; border: 1px solid #CCC; padding: 20px;  }
+input, textarea { display: block; outline: none; border: 1px solid #CCC; }
+
+.input { overflow: hidden; padding-bottom: 20px; }
+.input:last-child { padding-bottom: 0; }
+.label, .field { display: block; }
+
+.input .label { padding-bottom: 3px; }
+
+.input .field input,
+.input .field textarea { width: 95%; padding: 5px; }
+
+.input .field input[value] { border-color: #900; }
+
+.input.radio .field input,
+.input.radio .field label { display: inline; width: auto; }
+.input.radio .field label { padding-right: 20px; }
+
+.input .helper { color: #666; font-size: 0.9em; padding-top: 3px; }
+.input .helper.error-message { display: none; color: #900; }
+
+.input.error .helper.hide-on-error { display: none; }
+.input.error .helper.error-message { display: block; }
+
+.compact .label, .compact .field { float: left; }
+.compact .field { width: 70%; }
+.compact .label { width: 20%; margin-right: 5%; text-align: right; }

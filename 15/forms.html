@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Forms</title>
+		<link rel="stylesheet" href="common.css">
+	</head>
+	<body>
+
+		<form action="#" class="compacts">
+
+			<div class="input text error">
+				<label for="name" class="label">Name</label>
+				<div class="field">
+					<div class="inputwrapper"><input type="text" name="name" id="name" /></div>
+					<div class="helper hide-on-error">Nice and simple name. <em>eg. John Smith</em></div>
+					<div class="helper error-message">This doesn't appear to be a valid name!</div>
+				</div>
+			</div>
+
+			<div class="input text">
+				<label for="name" class="label">Name</label>
+				<div class="field">
+					<p class="inputwrapper"><select><option>Please select ...</option></select></p>
+					<p class="helper">Nice and simple name. <em>eg. John Smith</em></p>
+					<p class="helper error-message">This doesn't appear to be a valid name!</p>
+				</div>
+			</div>
+
+			<div class="input text">
+				<label for="name" class="label">Name</label>
+				<div class="field">
+					<div class="inputwrapper"><textarea></textarea></div>
+					<div class="helper">Nice and simple name. <em>eg. John Smith</em></div>
+					<div class="helper error-message">This doesn't appear to be a valid name!</div>
+				</div>
+			</div>
+
+			<div class="input radio">
+				<label class="label">Gender</label>
+				<div class="field">
+					<input type="radio" name="gender" value="male" id="male" />
+					<label for="male">Male</label>
+					<input type="radio" name="gender" value="female" id="female" />
+					<label for="female">Female</label>
+					<input type="radio" name="gender" value="male" id="male" />
+					<label for="male">Male</label>
+					<input type="radio" name="gender" value="female" id="female" />
+					<label for="female">Female</label>
+					<input type="radio" name="gender" value="male" id="male" />
+					<label for="male">Male</label>
+					<input type="radio" name="gender" value="female" id="female" />
+					<label for="female">Female</label>
+				</div>
+			</div>
+			
+		</form>
+
+	</body>
+</html>
+

@@ -78,6 +78,8 @@ body { font: 12px/1.5 Verdana, sans-serif; background: #3a4146; }
 #player .playlist { padding: 5px 10px; margin-top: 10px;  background: #efefef; border: 1px solid #3b3b3b; border-radius: 5px; }
 #player .playlist ol { display: block; padding: 0; margin: 0; }
 #player .playlist ol li { display: block; padding: 0 8px; position: relative; border-bottom: 1px dotted #c9c9c9; color: #67747e; list-style: none outside; }
+#player .playlist ol li.playing { background: #000; color: #FFF; }
+#player .playlist ol li.playing .title { color: #FFF;  }
 #player .playlist ol li:last-child { border-bottom: none; }
 #player .playlist ol li span { display: inline-block; padding: 8px 0; }
 #player .playlist ol li .number { padding-right: 10px; }
