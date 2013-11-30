@@ -1,0 +1,45 @@
+@import "compass";
+@import "compass/reset";
+
+@import "typography";
+
+// ---------------------------------------------------------------------
+
+$bodyBgrd: #FFF;
+$containerWidth: 960px;
+
+$layoutPadding: 20px;
+$headerPadding: $layoutPadding;
+$mainPadding:	$layoutPadding;
+$footerPadding: $layoutPadding;
+
+$borderWidth: 1px;
+$borderColor: #CCC;
+
+$linkColorNormal:	#369;
+$linkColorHover:	adjust-lightness($linkColorNormal, 20);
+$linkColorActive:	tint(adjust-saturation($linkColorNormal, 80%), 80%);
+$linkColorVisited:	adjust-lightness($linkColorNormal, -10);
+$linkColorFocus:	$linkColorHover;
+
+// ---------------------------------------------------------------------
+* { 
+	@include box-sizing(border-box);
+}
+
+body {
+	background: $bodyBgrd;
+}
+
+a { 
+	@include link-colors($linkColorNormal, $linkColorHover, $linkColorActive, $linkColorVisited, $linkColorFocus);
+	@include hover-link;
+}
+
+// ---------------------------------------------------------------------
+
+#page { width: $containerWidth; margin: 0 auto; }
+
+#header { padding: $headerPadding; border-bottom: $borderWidth solid $borderColor;   }
+#footer { padding: $footerPadding; border-top: $borderWidth solid $borderColor;   }
+#main	{ padding: $mainPadding; }
