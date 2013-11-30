@@ -13,16 +13,105 @@
 			</header>
 			<div id="main">
 
-				<form action="#" method="post">
-					<h1>Sign-up form</h1>
+				<!-- Possible form classes - "compact", "super compact" -->
+				<form action="#" method="post" class="">
 					<h2>Sign-up form</h2>
-					<h3>Sign-up form</h3>
-					<h4>Sign-up form</h4>
-					<h5>Sign-up form</h5>
-					<h6>Sign-up form</h6>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Octavio fuit, cum illam severitatem in eo filio adhibuit, quem in adoptionem D. Quod ea non occurrentia fingunt, vincunt Aristonem; Quam illa ardentis amores excitaret sui! Cur tandem? Quid turpius quam sapientis vitam ex insipientium sermone pendere? Collige omnia, quae soletis: Praesidium amicorum.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Octavio fuit, cum illam severitatem in eo filio adhibuit, quem in adoptionem D. Quod ea non occurrentia fingunt, vincunt Aristonem; Quam illa ardentis amores excitaret sui! Cur tandem? Quid turpius quam sapientis vitam ex insipientium sermone pendere? Collige omnia, quae soletis: Praesidium amicorum.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Octavio fuit, cum illam severitatem in eo filio adhibuit, quem in adoptionem D. Quod ea non occurrentia fingunt, vincunt Aristonem; Quam illa ardentis amores excitaret sui! Cur tandem? Quid turpius quam sapientis vitam ex insipientium sermone pendere? Collige omnia, quae soletis: Praesidium amicorum.</p>
+
+					<fieldset>
+						<legend>Login details</legend>
+
+						<div class="input error">
+							<div class="label"><label for="username">Username</label></div>
+							<div class="field">
+								<input type="text" name="username" id="username" />
+								<div class="message helper">Enter your username here. <em>eg. John Smith</em></div>
+								<div class="message error">This doesn't look like a valid username!</div>
+							</div>
+						</div>
+
+						<div class="input">
+							<div class="label"><label for="password">Password</label></div>
+							<div class="field">
+								<input type="password" name="password" id="password" />
+							</div>
+						</div>
+
+						<div class="input radio radio-group">
+							<div class="label"><label>Gender</label></div>
+							<div class="field">
+								<input type="radio" name="gender" value="male" id="male" />
+								<label for="male">Male</label>
+								<input type="radio" name="gender" value="female" id="female" />
+								<label for="female">Female</label>
+							</div>
+						</div>
+
+						<div class="input checkbox">
+							<div class="field">
+								<input type="checkbox" name="over13" id="over13" />
+								<label for="over13">I confirm that I am over 13 years of age</label>
+							</div>
+						</div>
+
+					</fieldset>
+
+					<h3>Additional information</h3>
+
+					<fieldset>
+						<legend>Address</legend>
+
+						<div class="input select">
+							<div class="label"><label for="country">Country</label></div>
+							<div class="field">
+								<select name="country" id="country">
+									<option>Please choose ...</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="input select">
+							<div class="label"><label for="city">City</label></div>
+							<div class="field">
+								<select name="city" id="city">
+									<option>Please choose ...</option>
+								</select>
+							</div>
+						</div>
+						
+						<div class="input">
+							<div class="label"><label for="postcode">Post code</label></div>
+							<div class="field">
+								<input type="text" name="postcode" id="postcode" />
+							</div>
+						</div>
+					</fieldset>
+
+					<fieldset>
+						<legend>Social networks</legend>
+
+						<div class="input">
+							<div class="label"><label for="github">GitHub</label></div>
+							<div class="field">
+								<input type="text" name="github" id="github" />
+							</div>
+						</div>
+
+						<div class="input">
+							<div class="label"><label for="twitter">Twitter</label></div>
+							<div class="field">
+								<input type="text" name="twitter" id="twitter" />
+							</div>
+						</div>
+
+						<div class="input">
+							<div class="label"><label for="facebook">Facebook</label></div>
+							<div class="field">
+								<input type="text" name="facebook" id="facebook" />
+							</div>
+						</div>
+
+					</fieldset>
+
 				</form>
 
 			</div>

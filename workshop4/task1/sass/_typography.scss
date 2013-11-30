@@ -1,13 +1,11 @@
 $paddingBottom: 1em;
 
-
-
-body {
-	font: 16px/1.5 Verdana, Arial, sans-serif;
+body, input, textarea, select, table {
+	font: 14px/1.5 Lucida Grande, Verdana, Arial, sans-serif;
 }
 
 #{headings()} {
-	font-family: Georgia, Times New Roman, serif;
+	/*font-family: Georgia, Times New Roman, serif;*/
 	font-weight: bold;
 }
 

@@ -1,0 +1,75 @@
+form {
+	padding: 20px; border: 1px solid #CCC;
+
+	input, textarea, label {
+		display: block;
+	}
+
+	fieldset {
+		padding: 20px; margin-bottom: 20px; border: 1px solid #CCC;
+
+		legend { padding: 0 10px; }
+	}
+
+	h2, h3 {
+		padding: 10px 0; margin-bottom: 10px; text-align: center; background: #EEE; 
+	}
+
+	.input {
+		padding-bottom: 15px; 
+
+		.label {
+			label { font-weight: bold; }
+	   	}
+		
+		.field { 
+			input, textarea, select, button {
+				width: 100%; padding: 3px 10px; border: 1px solid #CCC; outline: none;
+
+				&:active, &:focus {
+					border-color: #090;
+				}
+			}  
+
+			.message { 
+				font-size: 0.9em; 
+
+				&.helper { color: #666;  }
+				&.error { color: #900; display: none; }
+			}
+		}
+
+		&.error {
+
+			.field input { border-color: #900; }
+			.message.error { display: block; }
+		}
+
+		&.radio, &.checkbox {
+
+			.field {
+				padding-top: 4px;
+
+				input, label { display: inline; width: auto; }
+				input { position: relative; top: -1px; }
+			}
+		}
+	}
+
+	&.compact .input {
+		overflow: hidden;
+
+		.label, .field { float: left; }
+
+		.label { width: 27%; margin-right: 3%; text-align: right;  }
+		.field { width: 70%; margin-left: 30%; }
+
+		.label + .field { margin-left: 0; }
+
+		.label label { padding: 4px 0; }
+	}
+
+	&.super.compact {
+		.input { width: 50%; float: left; }
+	}
+}
